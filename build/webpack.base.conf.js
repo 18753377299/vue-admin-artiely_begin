@@ -9,6 +9,10 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
+    vendor: ['./src/assets/js/SuperMap_Basic-8.1.1-14426','./src/assets/js/SuperMap-8.1.1-14426',
+      './src/assets/js/SuperMap_Plot-8.1.1-14426','./src/assets/js/SuperMap_IServer-8.1.1-14426',
+      './src/assets/js/SuperMap_Visualization-8.1.1-14426', './src/assets/js/SuperMap_OGC-8.1.1-14426',
+      './src/assets/js/SuperMap_Cloud-8.1.1-14426'],
     app: ['babel-polyfill', './src/main.js']
   },
   output: {
@@ -48,7 +52,7 @@ module.exports = {
         include: [resolve('src'), resolve('test'), resolve('config')]
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        test: /\.(png|jpe?g|gif|svg|cur)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
@@ -66,7 +70,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('common.js'),
+    // new webpack.optimize.CommonsChunkPlugin('common.js'),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       $: 'jquery'

@@ -12,7 +12,7 @@ const UserList = () => import('@/components/views/UserList')
 const UserInfo = () => import('@/components/views/UserInfo')
 const List = () => import('@/components/views/List')
 const Filter = () => import('@/components/pages/Filter')
-
+const RiskMap = () => import('@/components/views/riskmap/map')
 const routes = [
   {
     path: '/',
@@ -82,6 +82,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login
+  },
+  {
+    path: '/riskMap',
+    name: 'riskMap',
+    component: RiskMap
   },
   {
     path: '/register',
