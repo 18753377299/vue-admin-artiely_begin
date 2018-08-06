@@ -157,8 +157,23 @@ const menu = [
     sort: 1,
     children: [],
     fixed: false
+  },
+  {
+    path: '/',
+    name: '信息管理',
+    level: 0,
+    icon: 'icon-manage_fill',
+    fixed: false,
+    children: [
+      {
+        level: 1,
+        path: '/riskInfoClaim',
+        children: [],
+        fixed: false,
+        name: '典型案例分析'
+      }
+    ]
   }
-
 ]
 
 export default menu

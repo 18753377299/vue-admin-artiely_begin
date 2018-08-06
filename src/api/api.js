@@ -63,12 +63,28 @@ const checkToken = params => {
     params: params
   })
 }
+export function postMethodBody (url, data) {
+  return fetch({
+    url: url,
+    method: 'post',
+    data: data
+  })
+}
+export function postMethodParams (url, params) {
+  return fetch({
+    url: url,
+    method: 'get',
+    params: params
+  })
+}
 const apiList = {
   orderList,
   articleList,
   userList,
   postUserInfo,
-  checkToken
+  checkToken,
+  postMethodBody,
+  postMethodParams
 }
 
 export default apiList

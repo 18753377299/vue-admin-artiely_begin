@@ -13,6 +13,8 @@ const UserInfo = () => import('@/components/views/UserInfo')
 const List = () => import('@/components/views/List')
 const Filter = () => import('@/components/pages/Filter')
 const RiskMap = () => import('@/components/views/riskmap/map')
+const RiskInfoClaim = () => import('@/components/views/riskinfo/RiskInfoClaimQuery')
+
 const routes = [
   {
     path: '/',
@@ -70,6 +72,11 @@ const routes = [
         path: '/filter',
         name: 'filter',
         component: Filter
+      },
+      {
+        path: '/riskInfoClaim',
+        name: '典型案例分析',
+        component: RiskInfoClaim
       },
       {
         path: '/notFound',
