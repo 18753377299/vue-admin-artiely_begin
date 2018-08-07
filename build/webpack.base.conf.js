@@ -6,7 +6,7 @@ var webpack = require('webpack')
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
-
+// 两地进行提交测试 addby 20180807
 module.exports = {
   entry: {
     vendor: ['./src/assets/js/SuperMap_Basic-8.1.1-14426','./src/assets/js/SuperMap-8.1.1-14426',
