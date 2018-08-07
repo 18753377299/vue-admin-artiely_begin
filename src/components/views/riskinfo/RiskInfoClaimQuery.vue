@@ -13,6 +13,7 @@
     },
     methods: {
       query () {
+//        /riskinfo/queryClaimInfo  /separate.action
         this.$api.postMethodBody('/riskinfo/queryClaimInfo').then(response => {
           console.log(response)
         }).catch(error => {

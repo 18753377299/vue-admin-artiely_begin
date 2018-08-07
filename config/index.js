@@ -29,9 +29,9 @@ var config = {
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    // baseServerUrl: 'http://192.168.2.103:8078/prprisk_zg/',
-    // nginx
-    baseServerUrl: 'http://192.168.2.103:8080/',
+    baseServerUrl: 'http://192.168.2.103:8078/jk0831/',
+    // nginx   jk0831  prprisk_zg
+    // baseServerUrl: 'http://192.168.2.103:8080/',
     proxyTable: {},
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
