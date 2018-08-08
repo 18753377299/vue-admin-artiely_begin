@@ -1,4 +1,5 @@
 build/*.js
 config/*.js
+//设置vue样式的校验的忽略
 src/assets/js/*.js
 src/components/views/riskmap/map.vue

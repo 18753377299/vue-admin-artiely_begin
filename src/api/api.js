@@ -67,7 +67,11 @@ export function postMethodBody (url, data) {
   return fetch({
     url: url,
     method: 'post',
-    data: data
+    data: JSON.stringify(data),
+    // headers: {
+    //   'Content-Type': 'application/json'
+    // }
+    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
   })
 }
 export function postMethodParams (url, params) {

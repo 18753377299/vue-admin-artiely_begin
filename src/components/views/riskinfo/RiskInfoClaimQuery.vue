@@ -14,10 +14,15 @@
     methods: {
       query () {
 //        /riskinfo/queryClaimInfo  /separate.action
-        this.$api.postMethodBody('/riskinfo/queryClaimInfo').then(response => {
+//        this.$api.postMethodBody('/riskinfo/queryClaimInfo').then(response => {
+//          console.log(response)
+//        }).catch(error => {
+//          console.error('哎哟~！', error)
+//        })
+        this.$api.postMethodBody('/riskinfo/queryClaimInfo').then((response) => {
           console.log(response)
-        }).catch(error => {
-          console.error('哎哟~！', error)
+        }, (response) => {
+          console.log(response)
         })
       }
     }
