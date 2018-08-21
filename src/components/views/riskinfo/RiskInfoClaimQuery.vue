@@ -1,5 +1,10 @@
 <template>
   <div>
+    <Form >
+      <Row>
+        <Col></Col>
+      </Row>
+    </Form>
     <Button @click="query">查询</Button>
   </div>
 </template>
