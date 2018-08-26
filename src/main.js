@@ -11,6 +11,9 @@ import api from './api/index.js'
 Vue.use(api)
 import store from './store'
 import Cookies from 'js-cookie'
+import axios from 'axios'
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+Vue.prototype.$axios = axios
 import 'iview/dist/styles/iview.css' // 使用 CSS
 import './assets/styles/layout/layout.less' // 引入布局样式
 import './assets/styles/cover/cover.less' // 覆盖样式

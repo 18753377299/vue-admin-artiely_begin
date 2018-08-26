@@ -1,20 +1,20 @@
 import fetch from './fetch.js'
 
-// // 登录
-// export function login (data) {
-//   return fetch({
-//     url: '',
-//     method: 'post',
-//     data
-//   })
-// }
-// // 登出
-// export function logout () {
-//   return fetch({
-//     url: '',
-//     method: 'post'
-//   })
-// }
+// 登录 (params 和 data的区别：)
+export function login (url, data) {
+  return fetch({
+    url: url,
+    method: 'get',
+    params: data
+  })
+}
+// 登出
+export function logout () {
+  return fetch({
+    url: '',
+    method: 'post'
+  })
+}
 
 const orderList = params => {
   return fetch({
@@ -68,10 +68,10 @@ export function postMethodBody (url, data) {
     url: url,
     method: 'post',
     data: JSON.stringify(data),
-    // headers: {
-    //   'Content-Type': 'application/json'
-    // }
-    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+    headers: {
+      'Content-Type': 'application/json'
+    }
+    // headers: {'Content-Type': 'application/x-www-form-urlencoded'}
   })
 }
 export function postMethodParams (url, params) {
@@ -88,7 +88,9 @@ const apiList = {
   postUserInfo,
   checkToken,
   postMethodBody,
-  postMethodParams
+  postMethodParams,
+  login,
+  logout
 }
 
 export default apiList
